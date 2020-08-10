@@ -1,0 +1,402 @@
+Results of optimization!
+Energetischer Wirkungsgrad: 0.4650333875699746
+Model unknown
+
+  Variables:
+    SummZ : Size=1, Index=None
+        Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+        None :     0 : 4042206.5334464936 :  None : False : False : PositiveReals
+
+  Objectives:
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Value
+        None :   True : 0.28512315770913615
+
+  Constraints:
+    APH_connectIN_cold.expanded : Size=4
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+          4 :   0.0 :  0.0 :   0.0
+    CC_connectIN.expanded : Size=4
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+          4 :   0.0 :  0.0 :   0.0
+    GT_connectIN.expanded : Size=4
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+          4 :   0.0 :  0.0 :   0.0
+    GT_connectOUT.expanded : Size=4
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+          4 :   0.0 :  0.0 :   0.0
+    Nettoarbeit : Size=1
+        Key  : Lower   : Body    : Upper
+        None : 30000.0 : 30000.0 : 30000.0
+    SummeKosten : Size=1
+        Key  : Lower : Body                   : Upper
+        None :   0.0 : -4.656612873077393e-10 :   0.0
+
+  Blocks:
+    Block AC
+    
+      Variables:
+        eta : Size=1, Index=None
+            Key  : Lower : Value              : Upper  : Fixed : Stale : Domain
+            None :   0.5 : 0.7585792113802774 : 0.8999 : False : False : PositiveReals
+        rp : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :   1.0 : 5.528287541086995 :  16.0 : False : False : PositiveReals
+        W : Size=1, Index=None
+            Key  : Lower   : Value             : Upper   : Fixed : Stale : Domain
+            None : 10000.0 : 15705.61225464756 : 50000.0 : False : False : PositiveReals
+        Z : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :     0 : 450773.0744440932 :  None : False : False : PositiveReals
+        m_in : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :    10 : 94.85185900069047 : 500.0 : False : False : PositiveReals
+        m_out : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :   1.0 : 94.85185900069047 : 500.0 : False : False : PositiveReals
+        p_out : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None : 1.013 : 5.600155279121125 :  20.0 : False : False : PositiveReals
+        T_out : Size=1, Index=None
+            Key  : Lower  : Value             : Upper : Fixed : Stale : Domain
+            None : 298.15 : 545.7357481746438 : 800.0 : False : False : PositiveReals
+        h_out : Size=1, Index=None
+            Key  : Lower : Value              : Upper  : Fixed : Stale : Domain
+            None :   1.0 : 1.0000029055899233 : 1000.0 : False : False : PositiveReals
+    
+      Objectives:
+        None
+    
+      Constraints:
+        massenb : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        Enthalpie_out : Size=1
+            Key  : Lower : Body                    : Upper
+            None :   0.0 : -1.1993961379630491e-11 :   0.0
+        arbeit : Size=1
+            Key  : Lower : Body                  : Upper
+            None :   0.0 : 5.820766091346741e-09 :   0.0
+        austrittstemperatur : Size=1
+            Key  : Lower : Body                  : Upper
+            None :   0.0 : 2.645492713782005e-10 :   0.0
+        austrittsdruck : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        Kosten : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -8.844654075801373e-07 :   0.0
+    Block APH
+    
+      Variables:
+        deltaT : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :     0 : 176.88952462680373 :  None : False : False : PositiveReals
+        Z : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :     0 : 1142890.559737509 :  None : False : False : PositiveReals
+        m_in_c : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :   1.0 : 94.85185900069047 : 500.0 : False : False : PositiveReals
+        m_out_c : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :   1.0 : 94.85185900069047 : 500.0 : False : False : PositiveReals
+        p_in_c : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None : 1.013 : 5.600155279121125 :  20.0 : False : False : PositiveReals
+        p_out_c : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None : 1.013 : 5.320147515165069 :  20.0 : False : False : PositiveReals
+        T_in_c : Size=1, Index=None
+            Key  : Lower  : Value             : Upper : Fixed : Stale : Domain
+            None : 298.15 : 545.7357481746438 : 800.0 : False : False : PositiveReals
+        T_out_c : Size=1, Index=None
+            Key  : Lower  : Value             : Upper  : Fixed : Stale : Domain
+            None : 298.15 : 902.0621522617893 : 1200.0 : False : False : PositiveReals
+        h_in_c : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :  None : 1.0000029055899233 :  None : False : False :  Reals
+        h_out_c : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :  None : 396.7520799844027 :  None : False : False :  Reals
+        m_in_w : Size=1, Index=None
+            Key  : Lower : Value            : Upper : Fixed : Stale : Domain
+            None :   1.0 : 96.1420889412444 : 500.0 : False : False : PositiveReals
+        m_out_w : Size=1, Index=None
+            Key  : Lower : Value            : Upper : Fixed : Stale : Domain
+            None :   1.0 : 96.1420889412444 : 500.0 : False : False : PositiveReals
+        p_in_w : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None : 1.013 : 1.0985718836630811 :  20.0 : False : False : PositiveReals
+        p_out_w : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None : 1.013 : 1.0656147271531886 :  20.0 : False : False : PositiveReals
+        T_in_w : Size=1, Index=None
+            Key  : Lower  : Value              : Upper  : Fixed : Stale : Domain
+            None : 298.15 : 1060.7138986904015 : 1700.0 : False : False : PositiveReals
+        T_out_w : Size=1, Index=None
+            Key  : Lower  : Value             : Upper  : Fixed : Stale : Domain
+            None : 298.15 : 742.2098844006357 : 1700.0 : False : False : PositiveReals
+        h_in_w : Size=1, Index=None
+            Key  : Lower : Value               : Upper : Fixed : Stale : Domain
+            None :  None : -472.00822055198347 :  None : False : False :  Reals
+        h_out_w : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :  None : -862.4492919671299 :  None : False : False :  Reals
+    
+      Objectives:
+        None
+    
+      Constraints:
+        massenb_kalt : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        massenb_warm : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        Enthalpie_out_c : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -6.565414878423326e-12 :   0.0
+        Enthalpie_out_w : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -9.094947017729282e-13 :   0.0
+        waerme : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 1.8189894035458565e-10 :   0.0
+        austrittP_kalt : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        austrittP_warm : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        deltaT_log : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 2.2737367544323206e-13 :   0.0
+        Kosten : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 3.7695281207561493e-07 :   0.0
+    Block CC
+    
+      Variables:
+        Z : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :     0 : 145277.67047912575 :  None : False : False : PositiveReals
+        m_in : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :   1.0 : 94.85185900069047 : 500.0 : False : False : PositiveReals
+        m_out : Size=1, Index=None
+            Key  : Lower : Value            : Upper : Fixed : Stale : Domain
+            None :   1.0 : 96.1420889412444 : 500.0 : False : False : PositiveReals
+        m_fuel : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :     1 : 1.290229940553928 :  20.0 : False : False : PositiveReals
+        T_in : Size=1, Index=None
+            Key  : Lower  : Value             : Upper  : Fixed : Stale : Domain
+            None : 298.15 : 902.0621522617893 : 1700.0 : False : False : PositiveReals
+        T_out : Size=1, Index=None
+            Key  : Lower  : Value              : Upper  : Fixed : Stale : Domain
+            None : 298.15 : 1427.6819537057725 : 1700.0 : False : False : PositiveReals
+        p_in : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None : 1.013 : 5.320147515165069 :  20.0 : False : False : PositiveReals
+        p_out : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None : 1.013 : 5.054140139406814 :  20.0 : False : False : PositiveReals
+        h_in : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :  None : 396.7520799844027 :  None : False : False :  Reals
+        h_out : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :  None : 3.3882760081569243 :  None : False : False :  Reals
+    
+      Objectives:
+        None
+    
+      Constraints:
+        massenb : Size=1
+            Key  : Lower : Body                  : Upper
+            None :   0.0 : 2.220446049250313e-16 :   0.0
+        Enthalpie_out : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -9.094947017729282e-13 :   0.0
+        waerme : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 2.6047928258776665e-09 :   0.0
+        austritt : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -8.881784197001252e-16 :   0.0
+        Kosten : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -9.566429071128368e-08 :   0.0
+    Block GT
+    
+      Variables:
+        W : Size=1, Index=None
+            Key  : Lower   : Value             : Upper   : Fixed : Stale : Domain
+            None : 30000.0 : 45705.61225464756 : 80000.0 : False : False : PositiveReals
+        eta : Size=1, Index=None
+            Key  : Lower : Value              : Upper    : Fixed : Stale : Domain
+            None :   0.5 : 0.8153828822091737 : 0.919999 : False : False : PositiveReals
+        Z : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None :     0 : 705659.6170640693 :  None : False : False : PositiveReals
+        m_in : Size=1, Index=None
+            Key  : Lower : Value            : Upper : Fixed : Stale : Domain
+            None :   1.0 : 96.1420889412444 : 500.0 : False : False : PositiveReals
+        m_out : Size=1, Index=None
+            Key  : Lower : Value            : Upper : Fixed : Stale : Domain
+            None :   1.0 : 96.1420889412444 : 500.0 : False : False : PositiveReals
+        p_in : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None : 1.013 : 5.054140139406814 :  20.0 : False : False : PositiveReals
+        p_out : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None : 1.013 : 1.0985718836630811 :  20.0 : False : False : PositiveReals
+        T_in : Size=1, Index=None
+            Key  : Lower  : Value              : Upper  : Fixed : Stale : Domain
+            None : 298.15 : 1427.6819537057725 : 1700.0 : False : False : PositiveReals
+        T_out : Size=1, Index=None
+            Key  : Lower  : Value              : Upper  : Fixed : Stale : Domain
+            None : 298.15 : 1060.7138986904015 : 1700.0 : False : False : PositiveReals
+        h_in : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :  None : 3.3882760081569243 :  None : False : False :  Reals
+        h_out : Size=1, Index=None
+            Key  : Lower : Value               : Upper : Fixed : Stale : Domain
+            None :  None : -472.00822055198347 :  None : False : False :  Reals
+    
+      Objectives:
+        None
+    
+      Constraints:
+        massenb : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        Enthalpie_out : Size=1
+            Key  : Lower : Body                    : Upper
+            None :   0.0 : -1.8758328224066645e-11 :   0.0
+        austritttemp : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -5.043148121330887e-10 :   0.0
+        bruttoarbeit : Size=1
+            Key  : Lower : Body                  : Upper
+            None :   0.0 : 6.555637810379267e-09 :   0.0
+        Kosten : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 1.0244548320770264e-06 :   0.0
+    Block HRSG
+    
+      Variables:
+        deltaT_P : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :   1.0 : 10.493454080055471 :  60.0 : False : False : PositiveReals
+        Z : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :     0 : 1597605.6117216966 :  None : False : False : PositiveReals
+        PH_Q : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :     0 : 10278.192594765716 :  None : False : False : PositiveReals
+        PH_deltaT : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :     0 : 55.127918731949286 :  None : False : False : PositiveReals
+        EV_Q : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :  None : 27405.576444553204 :  None : False : False :  Reals
+        EV_deltaT : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :  None : 100.10516252926655 :  None : False : False :  Reals
+        h_mitte_c : Size=1, Index=None
+            Key  : Lower : Value : Upper  : Fixed : Stale : Domain
+            None :   0.0 : 100.0 : 3000.0 : False :  True : NonNegativeReals
+        m_in_w : Size=1, Index=None
+            Key  : Lower : Value            : Upper : Fixed : Stale : Domain
+            None :   1.0 : 96.1420889412444 : 500.0 : False : False : PositiveReals
+        m_out_w : Size=1, Index=None
+            Key  : Lower : Value            : Upper : Fixed : Stale : Domain
+            None :   1.0 : 96.1420889412444 : 500.0 : False : False : PositiveReals
+        p_in_w : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None : 1.013 : 1.0656147271531886 :  20.0 : False : False : PositiveReals
+        p_mitte_w : Size=1, Index=None
+            Key  : Lower : Value             : Upper : Fixed : Stale : Domain
+            None : 1.013 : 1.038974358974359 :  20.0 : False : False : PositiveReals
+        T_in_w : Size=1, Index=None
+            Key  : Lower  : Value             : Upper : Fixed : Stale : Domain
+            None : 298.15 : 742.2098844006357 : 900.0 : False : False : PositiveReals
+        T_mitte_w : Size=1, Index=None
+            Key  : Lower  : Value              : Upper : Fixed : Stale : Domain
+            None : 298.15 : 496.02798939854597 : 800.0 : False : False : PositiveReals
+        T_out_w : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :   400 : 400.00000027286495 : 600.0 : False : False : PositiveReals
+        h_in_w : Size=1, Index=None
+            Key  : Lower : Value              : Upper : Fixed : Stale : Domain
+            None :  None : -862.4492919671299 :  None : False : False :  Reals
+        h_mitte_w : Size=1, Index=None
+            Key  : Lower : Value               : Upper : Fixed : Stale : Domain
+            None :  None : -1147.5021418308443 :  None : False : False :  Reals
+        h_out_w : Size=1, Index=None
+            Key  : Lower : Value               : Upper : Fixed : Stale : Domain
+            None :  None : -1254.4084167823564 :  None : False : False :  Reals
+    
+      Objectives:
+        None
+    
+      Constraints:
+        massenbilanz_warm : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        PinchT : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        Enthalpie_out_w : Size=1
+            Key  : Lower : Body                    : Upper
+            None :   0.0 : -2.2737367544323206e-13 :   0.0
+        Enthalpie_mitte_w : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -4.547473508864641e-13 :   0.0
+        waermestrom : Size=1
+            Key  : Lower             : Body              : Upper
+            None : 37683.76903931892 : 37683.76903931783 : 37683.76903931892
+        waermestrom_EV : Size=1
+            Key  : Lower              : Body               : Upper
+            None : 27405.576444553204 : 27405.576444553204 : 27405.576444553204
+        druckverluste_PH : Size=1
+            Key  : Lower : Body  : Upper
+            None : 1.013 : 1.013 : 1.013
+        PH_waermestrom : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 3.0740920919924974e-10 :   0.0
+        EV_waermestrom : Size=1
+            Key  : Lower : Body                : Upper
+            None :   0.0 : 7.8580342233181e-10 :   0.0
+        EV_logT : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 1.8701484805205837e-11 :   0.0
+        PH_logT : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : 1.0963674412778346e-11 :   0.0
+        druckverluste_EV : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        Kosten : Size=1
+            Key  : Lower : Body                   : Upper
+            None :   0.0 : -5.710171535611153e-07 :   0.0
+        connectIN.expanded : Size=4
+            Key : Lower : Body : Upper
+              1 :   0.0 :  0.0 :   0.0
+              2 :   0.0 :  0.0 :   0.0
+              3 :   0.0 :  0.0 :   0.0
+              4 :   0.0 :  0.0 :   0.0

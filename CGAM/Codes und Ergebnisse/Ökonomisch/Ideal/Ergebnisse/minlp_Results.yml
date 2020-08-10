@@ -1,0 +1,85 @@
+Keine optimale Lösung!
+
+Solver gibt den Fehler: Divison by zero. Für die Constraint zur Berechnung von AC_T_out.
+
+Results of optimization!
+Model unknown
+
+  Variables:
+    SummZ : Size=1, Index=None
+        Key  : Lower : Value : Upper : Fixed : Stale : Domain
+        None :     0 :   0.0 :  None : False : False : PositiveReals
+
+  Objectives:
+    obj : Size=1, Index=None, Active=True
+        Key  : Active : Value
+        None :   True :   0.0
+
+  Constraints:
+    APH_connectIN_cold.expanded : Size=3
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+    CC_connectIN.expanded : Size=3
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+    GT_connectIN.expanded : Size=3
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+    GT_connectOUT.expanded : Size=3
+        Key : Lower : Body : Upper
+          1 :   0.0 :  0.0 :   0.0
+          2 :   0.0 :  0.0 :   0.0
+          3 :   0.0 :  0.0 :   0.0
+    Nettoarbeit : Size=1
+        Key  : Lower   : Body : Upper
+        None : 30000.0 :  0.0 : 30000.0
+    SummeKosten : Size=1
+        Key  : Lower : Body : Upper
+        None :   0.0 :  0.0 :   0.0
+
+  Blocks:
+    Block AC
+    
+      Variables:
+        eta : Size=1, Index=None
+            Key  : Lower : Value : Upper    : Fixed : Stale : Domain
+            None :   0.5 :   0.0 : 0.899999 : False : False : PositiveReals
+        rp : Size=1, Index=None
+            Key  : Lower : Value : Upper : Fixed : Stale : Domain
+            None :   1.0 :   0.0 :  60.0 : False : False : PositiveReals
+        W : Size=1, Index=None
+            Key  : Lower   : Value : Upper    : Fixed : Stale : Domain
+            None : 10000.0 :   0.0 : 100000.0 : False : False : PositiveReals
+        Z : Size=1, Index=None
+            Key  : Lower : Value : Upper : Fixed : Stale : Domain
+            None :     0 :   0.0 :  None : False : False : PositiveReals
+        m_in : Size=1, Index=None
+            Key  : Lower : Value : Upper  : Fixed : Stale : Domain
+            None :   1.0 :   0.0 : 1000.0 : False : False : PositiveReals
+        m_out : Size=1, Index=None
+            Key  : Lower : Value : Upper  : Fixed : Stale : Domain
+            None :   1.0 :   0.0 : 1000.0 : False : False : PositiveReals
+        p_out : Size=1, Index=None
+            Key  : Lower : Value : Upper : Fixed : Stale : Domain
+            None : 1.013 :   0.0 :  50.0 : False : False : PositiveReals
+        T_out : Size=1, Index=None
+            Key  : Lower  : Value : Upper  : Fixed : Stale : Domain
+            None : 298.15 :   0.0 : 1700.0 : False : False : PositiveReals
+    
+      Objectives:
+        None
+    
+      Constraints:
+        massenb : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        arbeit : Size=1
+            Key  : Lower : Body : Upper
+            None :   0.0 :  0.0 :   0.0
+        austritt : Size=1

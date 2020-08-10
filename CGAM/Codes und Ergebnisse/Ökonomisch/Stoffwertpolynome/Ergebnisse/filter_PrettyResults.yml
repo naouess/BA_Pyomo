@@ -1,0 +1,62 @@
+﻿Results of optimization!
+  
+ #  m[kg/s]    p[bar]    T[K]    T[Â°C]
+--------------------------------------
+Verdichter (AC):  
+
+ 1    43.94     1.013  298.15    25.00
+ 2    43.94     1.217  800.00   526.85 
+
+LuftvorwÃ¤rmer (APH):  
+
+    Kalte Seite (Luft):  
+
+ 2    43.94     1.217  800.00   526.85
+ 3    43.94     1.156 1168.24   895.09 
+
+    Warme Seite (Abgas):  
+
+ 5    46.01     1.099 1168.24   895.09
+ 6    46.01     1.066  900.00   626.85 
+
+Brennkammer (CC):  
+
+ 3    43.94     1.156 1168.24   895.09
+ 4    46.01     1.099 1168.24   895.09
+12     2.06     1.156  298.15    25.00 
+
+Gasturbine (GT):  
+
+ 4    46.01     1.099 1168.24   895.09
+ 5    46.01     1.099 1168.24   895.09 
+
+Abhiltzekessel (HRSG):  
+
+    Kalte Seite (Wasserdampf):  
+
+ 9    14.00    20.000  298.15    25.00
+10    14.00    20.000  470.53   197.38
+11    14.00    20.000  485.53   212.38 
+
+    Warme Seite (Abgas):  
+
+ 6    46.01     1.066  900.00   626.85
+ 7    46.01     1.039  498.36   225.21
+ 8    46.01     1.013  600.00   326.85 
+
+ 
+W_AC: 34170.53 kW
+W_GT: 64170.53 kW
+eta: 29.068 %
+ 
+## Entscheidungsvariablen: 
+
+     DruckverhÃ¤ltnis im Verdichter: 1.202
+     Isentroper Wirkungsgrad des Verdichters: 50.000 % und der Turbine 66.587 %
+     Temperaturdifferenz am Pinch: 12.821 K
+     Temperatur am Turbineneintritt: 1168.240 K 
+
+Brennstoffkosten: 0.4128 $/s
+Kapitalgebundene Kosten und Betrieb und Wartungskosten: 0.0079 $/s
+Gesamtkosten: 0.4207 $/s 
+
